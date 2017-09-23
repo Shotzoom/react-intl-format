@@ -1,0 +1,9 @@
+{
+  "name": "react-intl-format",
+  "version": "0.0.0",
+  "description": "A react-intl component using a callback render method for culture injection.",
+  "main": "./bin/react-intl-format",
+  "author": "Brenden Snyder <brendens@shotzoom.com>",
+  "license": "MIT",
+  "private": false
+}
