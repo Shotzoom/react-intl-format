@@ -1,7 +1,7 @@
 React Intl Format
 =================
 
-A [react-intl](https://github.com/yahoo/react-intl) component that provides a alternate way to localize your components.
+A [react-intl](https://github.com/yahoo/react-intl) component that provides a alternate way to localize your application.
 
 ```js
 npm install --save prop-types react-intl react-intl-format
@@ -49,7 +49,7 @@ function LoginForm(props) {
 export default injectIntl(LoginForm);
 ```
 
-This example shows basic usage of `react-intl-format`. Notice how we no longer need to wrap the component with `injectIntl` to access the `intlShape` value, its provided as a paramter in the render callback of `Format`.
+This example shows basic usage of `react-intl-format`. Notice how we no longer need to wrap the component with `injectIntl` to access the `intlShape` value, its provided as a paramter in the render callback of `<Format />`.
 ```jsx
 import { Format } from 'react-intl-format';
 
@@ -80,7 +80,7 @@ export default function LoginForm(props) {
 }
 ```
 
-A `configure` function is avaible to you if you need to customize how format passes down intl down to the render callback. Notice how we wrapped `intl` with a custom api that we can use during rendering. We can also replace `<FormatMessage />` with a simple `{_.m('login-form.heading')}` if we would like.
+A `configure` function is avaible to you if you need to customize how format passes down intl down to the render callback. Notice how we wrapped `intl` with a custom api that we can use during rendering. We cpuld also replace `<FormatMessage />` with a simple `{_.m('login-form.heading')}` if we would like.
 
 ```jsx
 import * as format from 'react-intl-format';
@@ -151,8 +151,12 @@ const CustomFormat = configure(
 
 ### Format
 
-Default implementation.
+Default implementation that just passes `inltShape` through to the render callback.
 
 ```js
-const Format = configure((intl) => intl);
+<Format>
+  {intl => {
+    /* ... */
+  }}
+</Format>
 ```

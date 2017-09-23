@@ -1,11 +1,15 @@
 {
   "name": "react-intl-format",
   "version": "0.0.0",
-  "description": "A react-intl component using a callback render method for culture injection.",
+  "description": "A react-intl component that provides a alternate way to localize your components.",
   "main": "./lib/react-intl-format.js",
   "module": "./lib/react-intl-format.es.js",
   "jsnext:main": "./lib/react-intl-format.es.js",
   "author": "Brenden Snyder <brendens@shotzoom.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edufii/react-intl-format.git"
+  },
   "license": "MIT",
   "private": false,
   "scripts": {
