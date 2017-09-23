@@ -5,7 +5,8 @@
     "transform-es2015-block-scoped-functions",
     "transform-es2015-parameters",
     ["transform-es2015-destructuring", { "loose": true }],
-    "transform-es2015-block-scoping"
+    "transform-es2015-block-scoping",
+    "transform-react-jsx"
   ],
   "env": {
     "test": {

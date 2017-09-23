@@ -11,20 +11,12 @@ export default function configure(
   invariant(typeof apiSelector === 'function', 'Expected apiSelector to be a function but received \'%s\'.', JSON.stringify(apiSelector));
 
   function Format(props, context) {
-    props.children(apiSelector(context.intl));
+    return props.children(apiSelector(context.intl, props));
   }
 
   Format.displayName = displayName;
-
-  Format.contextTypes = {
-    intl: intlShape.isRequired
-  };
-
-  if (process.env.NODE_ENV === 'development') {
-    Format.propTypes = {
-      children: PropTypes.func.isRequired
-    };
-  }
+  Format.contextTypes = { intl: intlShape.isRequired };
+  Format.propTypes = { children: PropTypes.func.isRequired };
 
   return Format;
 }

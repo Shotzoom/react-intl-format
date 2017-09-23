@@ -8,5 +8,6 @@ describe('react-intl-format', () => {
 
   it('exports <Format /> as Format', () => {
     expect(format.Format).toBeInstanceOf(Function);
+    expect(format.Format).toHaveProperty('displayName', 'Format');
   });
 });
