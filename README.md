@@ -11,7 +11,7 @@ If you are using commonjs or es modules, simply require or import the library.
 
 ```js
 // commonjs
-var format = require('react-intl-format);
+var format = require('react-intl-format');
 ```
 ```js
 // es modules
@@ -102,14 +102,14 @@ export default function LoginForm(props) {
           <div className="form-group">
             <input
               className="form-control" 
-              placeholder={_.m('login-form.email.placeholder)}
+              placeholder={_.m('login-form.email.placeholder')}
               name="email"
             />
           </div>
           <div className="form-group">
             <input
               className="form-control" 
-              placeholder={_.m('login-form.password.placeholder' )}
+              placeholder={_.m('login-form.password.placeholder')}
               name="password"
             />
           </div>
