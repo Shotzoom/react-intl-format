@@ -1,4 +1,4 @@
-import configure from './configure';
+import configure from "./configure";
 
 export { configure };
-export const Format = configure((intl) => intl);
+export const Format = configure(intl => intl);
