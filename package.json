@@ -1,6 +1,6 @@
 {
   "name": "react-intl-format",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A react-intl component that provides a alternate way to localize your components.",
   "keywords": [
     "intl",
@@ -35,7 +35,8 @@
     "lint": "eslint --ext .jsx --ext .js .",
     "lint:fix": "eslint --ext .jsx --ext .js --fix .",
     "test": "cross-env BABEL_ENV=test jest",
-    "test:start": "cross-env BABEL_ENV=test jest --watch"
+    "test:start": "cross-env BABEL_ENV=test jest --watch",
+    "prepublish": "npm run test && npm run lint && npm run build"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -46,6 +47,7 @@
     "babel-plugin-transform-es2015-destructuring": "^6.23.0",
     "babel-plugin-transform-es2015-function-name": "^6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-es2015-parameters": "^6.24.1",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "cross-env": "^5.0.5",
     "enzyme": "^2.9.1",
