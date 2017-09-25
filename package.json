@@ -1,7 +1,21 @@
 {
   "name": "react-intl-format",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "A react-intl component that provides a alternate way to localize your components.",
+  "keywords": [
+    "intl",
+    "i18n",
+    "internationalization",
+    "locale",
+    "localization",
+    "globalization",
+    "react",
+    "reactjs",
+    "format",
+    "formatting",
+    "translate",
+    "translation"
+  ],
   "main": "./lib/react-intl-format.js",
   "module": "./lib/react-intl-format.es.js",
   "jsnext:main": "./lib/react-intl-format.es.js",
