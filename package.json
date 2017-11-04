@@ -1,6 +1,6 @@
 {
   "name": "react-intl-format",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A react-intl component that provides a alternate way to localize your components.",
   "keywords": [
     "intl",
